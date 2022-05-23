@@ -83,13 +83,9 @@ console.log(search("jhfdkaljs")); //No encuentra a nadie con este nombre pero si
 // offtopic: el método includes() determina si una matriz incluye un determinado elemento, devuelve true o false según corresponda.
 const array1 = [1, 2, 3];
 
-console.log(array1.includes(2));
-// expected true
+console.log(array1.includes(2)); // respuesta true
 
 const pets = ["cat", "dog", "bat"];
 
-console.log(pets.includes("cat"));
-// expected true
-
-console.log(pets.includes("at"));
-// expected false
+console.log(pets.includes("cat")); // respuesta true
+console.log(pets.includes("at")); // respuesta false
