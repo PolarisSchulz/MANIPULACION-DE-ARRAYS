@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- - Map 
+    - Funciona para hacer transformaciones en arrays
+    - .map() es INMUTABLE por lo tanto no modifica el array original, sino que crea uno nuevo con la “transformación” aplicada.   
+    - Mantienes el mismo  número de elementos (length) que el array original.
+    - Te devuelve en el nuevo array.   
+    -->
+
+    <div id="app"></div>
+
+    <script>
+        const products = [
+            { title: 'Aguacate', price: 170 }, //array de productos
+            { title: 'Manzana', price: 20 },
+            { title: 'Bananas', price: 15 },
+        ];
+
+        const app = document.getElementById('app');  //Envia al DOM
+        const lis = products.map(product => {
+            return `<li>${product.title} - ${product.price}</li>` //el .map en este caso esta volviendo el array de productos en string
+        })
+        app.innerHTML = lis.join('');  //join todo lo junta (veremos más adelante)
+    </script>
+
+</body>
+
+</html>
