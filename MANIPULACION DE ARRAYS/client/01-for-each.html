@@ -5,21 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>For Each</title>
 </head>
+
+<!-- - Manipulación de Arrays (metodos de arrays)
+    - For Each
+        - Nos sirve para hacer un recorrido de los elementos de un array
+        - Solo hay que enviar la función usando ⇒ (arrow function), y dentro de esto hacer el algoritmo o ejecución.
+        - ⇒ Arrow Function: La funcion que se va a ejecutar por cada uno de los elementos.  
+        -For Each hace lo mismo que un For, pero como metodo solo se ocupa en arrays
+        -La sintaxis con ForEach es muy corta comparandolo con For (Revisar en 01-for-Each.js)
+    -->
 
 <body>
 
+    <!-- <div id="app"></div>
 
-    <div id="app"></div>
     <script>
         const products = [
             { title: 'Burger', price: 121 },
             { title: 'Pizza', price: 20 },
+            { title: 'Pizza', price: 20 },
+            { title: 'Pizza', price: 20 },
+            { title: 'Pizza', price: 20 },
+            { title: 'Pizza', price: 20 },
+            { title: 'Pizza', price: 20 },
         ];
-        const app = document.getElementById('app');
+
+        const app = document.getElementById('app');  //Envia al DOM
         products.forEach(product => {
             app.innerHTML += `<li>${product.title} - ${product.price}</li>`
+        })
+    </script> -->
+
+
+    <div id="appTask"></div>
+
+    <script>
+
+        const tasks = [
+            { title: 'make dinner' },
+            { title: 'shower' },
+            { title: 'go to school' },
+        ];
+
+        const appTaskJs = document.getElementById('appTask'); //Envia al DOM
+        tasks.forEach(taskList => {
+            appTaskJs.innerHTML +=
+                `<li>${taskList.title}</li>`
         })
     </script>
 </body>
