@@ -25,22 +25,21 @@
     item.tax = 0.19;
   return item; });
   // Esto pasa por que estamos trabajando con objetos
-```
+  ```
 
     - Para evitarlo, y poder realizar una copia y evitar la referencia en memoria, utilizamos el spread operator de ES6 (https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax), donde generamos un nuevo objeto con los valores del objeto original y luego agregamos el nuevo valor que nos interesa.   
     - Referencias de objetos y copia https://es.javascript.info/object-copy
-    
-    ```js
+     ```js
     // Ahora sí, sin modificar el array original
-const respuesta3 = orders.map((item) => {
+    const respuesta3 = orders.map((item) => {
   return {
     ...item,
     tax: 0.19, // La clave esta en el return donde debemos generar un nuevo objeto para no trabajar con la referencia en memoria, sino con un objeto nuevo
   };
-});
-console.log("respuesta3", respuesta3); //Agregar un nuevo atributo a cada uno de los objetos
-console.log("original", orders);
-```
+  });
+  console.log("respuesta3", respuesta3); //Agregar un nuevo atributo a cada uno de los objetos
+  console.log("original", orders);
+  ```
 
 - Filter 
     - Lo que hace es filtrar el array original en base a una condición, los que cumplan la condición estaran en el nuevo array creado.
