@@ -26,34 +26,68 @@
             { title: 'Burger', price: 121 },
             { title: 'Pizza', price: 20 },
             { title: 'Pizza', price: 20 },
-            { title: 'Pizza', price: 20 },
-            { title: 'Pizza', price: 20 },
-            { title: 'Pizza', price: 20 },
-            { title: 'Pizza', price: 20 },
         ];
 
         const app = document.getElementById('app');  //Envia al DOM
         products.forEach(product => {
-            app.innerHTML += `<li>${product.title} - ${product.price}</li>`
+            app.innerHTML += `<li>${product.title} - ${product.price}</li>` //concatenaremos cosas dentro de las ${} tambien nuestro .title es un objeto
         })
     </script> -->
 
-
+    <!-- 
     <div id="appTask"></div>
 
     <script>
 
         const tasks = [
-            { title: 'make dinner' },
-            { title: 'shower' },
-            { title: 'go to school' },
+            { list: 'make dinner' },
+            { list: 'shower' },
+            { list: 'go to school' },
         ];
 
         const appTaskJs = document.getElementById('appTask'); //Envia al DOM
         tasks.forEach(taskList => {
             appTaskJs.innerHTML +=
-                `<li>${taskList.title}</li>`
+                `<li>${taskList.list}</li>`
         })
+    </script> -->
+
+    <div id="app"></div>
+
+    <script>
+        const tasks = [
+            {
+                task: 'Tarea 1',
+                descp: 'Descripcion de la tarea 1',
+                done: false,
+            },
+            {
+                task: 'Tarea 2',
+                descp: 'Descripcion de la tarea 2',
+                done: true,
+            },
+            {
+                task: 'Tarea 3',
+                descp: 'Descripcion de la tarea 3',
+                done: false,
+            },
+            {
+                task: 'Tarea 4',
+                descp: 'Descripcion de la tarea 4',
+                done: true,
+            },
+        ];
+
+        const app = document.getElementById('app');
+
+        tasks.forEach(task => {
+            app.innerHTML += `
+            <li> 
+            Nombre: ${task.task} ||  
+            Descripción: ${task.descp} - 
+            <input type="checkbox" ${task.done ? 'checked' : ''}/>
+            </li>`
+        });
     </script>
 </body>
 
