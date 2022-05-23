@@ -21,13 +21,15 @@
     - Esto provoca que como estamos modificando la referencia en memoria, el array original también sea modificado.   Entonces en conclusión, por más que map()  sea inmutable en este punto estamos copiando la referencia en memoria y por eso hace el cambio en el original. 
     - // Estamos retornando el objeto
 // por ende se copia la refencia en memoria
-const respuesta2 = orders.map((item) => {
+```jsconst respuesta2 = orders.map((item) => {
   item.tax = 0.19;
   return item;
 });
+```
 // Esto pasa por que estamos trabajando con objetos
     - Para evitarlo, y poder realizar una copia y evitar la referencia en memoria, utilizamos el spread operator de ES6 (https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax), donde generamos un nuevo objeto con los valores del objeto original y luego agregamos el nuevo valor que nos interesa.   
     -  // Ahora sí, sin modificar el array original
+```js
 const respuesta3 = orders.map((item) => {
   return {
     ...item,
@@ -36,7 +38,8 @@ const respuesta3 = orders.map((item) => {
 });
 console.log("respuesta3", respuesta3); //Agregar un nuevo atributo a cada uno de los objetos
 console.log("original", orders);
-    - Referencias de objetos y copia 
+```
+    - [Referencias de objetos y copia ](https://es.javascript.info/object-copy)
 - Filter 
     - Lo que hace es filtrar el array original en base a una condición, los que cumplan la condición estaran en el nuevo array creado.
     - Por lo tanto filter() es inmutable y el nuevo array creado solamente puede contener: 
