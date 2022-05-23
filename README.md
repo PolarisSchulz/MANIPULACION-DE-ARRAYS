@@ -29,6 +29,7 @@
 // Esto pasa por que estamos trabajando con objetos
     - Para evitarlo, y poder realizar una copia y evitar la referencia en memoria, utilizamos el spread operator de ES6 (https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax), donde generamos un nuevo objeto con los valores del objeto original y luego agregamos el nuevo valor que nos interesa.   
     -  // Ahora sí, sin modificar el array original
+    - Referencias de objetos y copia https://es.javascript.info/object-copy
 ```js
 const respuesta3 = orders.map((item) => {
   return {
@@ -39,7 +40,6 @@ const respuesta3 = orders.map((item) => {
 console.log("respuesta3", respuesta3); //Agregar un nuevo atributo a cada uno de los objetos
 console.log("original", orders);
 ```
-    - [Referencias de objetos y copia ](https://es.javascript.info/object-copy)
 - Filter 
     - Lo que hace es filtrar el array original en base a una condición, los que cumplan la condición estaran en el nuevo array creado.
     - Por lo tanto filter() es inmutable y el nuevo array creado solamente puede contener: 
