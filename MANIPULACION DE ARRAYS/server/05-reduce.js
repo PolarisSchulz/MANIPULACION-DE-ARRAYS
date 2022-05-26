@@ -17,6 +17,8 @@ console.log("con for", sum);
 
 
 
+
+
 // con metodo array
 // ----------------
 
