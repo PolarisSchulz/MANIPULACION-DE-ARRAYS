@@ -17,6 +17,7 @@ console.log("original", words);
 
 // Manera de hacerlo con filter
 
+
 const respuesta = words.filter((item) => item.length >= 6);
 // Va a generar un nuevo arreglo que lo va a guardar en 'respuesta'
 console.log("respuesta", respuesta);
@@ -89,3 +90,33 @@ const pets = ["cat", "dog", "bat"];
 
 console.log(pets.includes("cat")); // respuesta true
 console.log(pets.includes("at")); // respuesta false
+
+
+
+
+
+
+
+
+// -------------------------
+// Por medio de un ejercicio
+
+// Tienes un array con palabras, tu desafío es retornar un array solo con las que cumplan con la condición de tener 4 o más letras.
+
+// La solución debería tener un input y output como los siguientes:
+
+// solution(['amor', 'sol', 'piedra', 'día']);
+
+// Output
+
+// [ 'amor', 'piedra' ]
+
+
+
+const palabritas = ['amor', 'sol', 'piedra', 'día'];
+
+const respuestaPalabras = palabritas.filter((item) => item.length >= 4);
+// Va a generar un nuevo arreglo que lo va a guardar en 'respuesta'
+console.log("respuestaPalabras", respuestaPalabras);
+console.log("original", palabritas);
+

@@ -100,30 +100,6 @@ console.log("original", orders);
 // ]
 
 
-const orderOriginal = [
-  {
-    name: "Product 1",
-    price: 1000,
-    stock: 10
-  },
-  {
-    name: "Product 2",
-    price: 2000,
-    stock: 20
-  },
-];
-
-const reply = orderOriginal.map((item) => {
-  return {
-    ...item,
-tax: 0.19, // La clave esta en el return donde debemos generar un nuevo objeto para no trabajar con la referencia en memoria, sino con un objeto nuevo
-  };
-});
-console.log("reply", reply); //Agregar un nuevo atributo a cada uno de los objetos
-console.log("original", orderOriginal);
-
-
-
 const orderOriginal2 = [
   {
     name: "Product 1",
@@ -137,11 +113,11 @@ const orderOriginal2 = [
   },
 ];
 
-const reply = orderOriginal2.map((item) => {
+const reply2 = orderOriginal2.map((item) => {
   return {
     ...item,
     taxes: item.price *0.19
   };
 });
-console.log("reply", reply);
+console.log("reply2", reply2);
 console.log("original", orderOriginal2);
