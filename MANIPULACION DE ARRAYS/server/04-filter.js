@@ -1,3 +1,11 @@
+// - Filter 
+//     - Lo que hace es filtrar el array original en base a una condición, los que cumplan la condición estaran en el nuevo array creado.
+//     - Por lo tanto filter() es inmutable y el nuevo array creado solamente puede contener: 
+//         - cero coincidencias
+//         - todas coincidencias
+//         - algunas coincidencias
+//         - Pero nunca más coincidencias que el tamaño del array original.
+
 // Manera de hacerlo con for
 
 const words = ["spray", "limit", "elite", "exuberant"];
