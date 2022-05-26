@@ -32,7 +32,7 @@ console.log("respuesta con reduce", respuesta);
 
 // Así funciona la iteración del reduce() por dentro   
 - https://remnote-user-data.s3.amazonaws.com/ISJcke2L619MqrkOmJwYPwH7KWk2RrkoF_86ZTYozG44_X_vllrfp-9w_14CetosxaTJ4l6J584BcdG28aO_FmGPJaOFIH5VzxqLBV0L9JWMl09fE4aaNxrXKUgYkwst.jpeg
- 
+
 - https://miro.medium.com/max/2000/1*dhTC_FFgiH3mKROrnDj12w.gif 
 
 - https://static.platzi.com/media/user_upload/metodos-90c872e6-a574-490e-8b9d-96c5309c278b.jpg
