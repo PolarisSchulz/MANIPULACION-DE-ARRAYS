@@ -9,8 +9,8 @@ const letters3 = ["a", "b", "c"];
 
 const newArray = [];
 for (let index = 0; index < letters.length; index++) {
-  const element = letters3[index];
-  newArray.push(element + '++');
+    const element = letters3[index];
+    newArray.push(element + '++');
 }
 
 console.log('original',letters);
@@ -23,10 +23,34 @@ const newArrayMap = letters4.map((item) => item + "++");
 console.log("original", letters);
 console.log("arrayVacia", newArrayMap);
 
+
+
+
+
+
+
+
+
+
+// -------------------------
 // Por medio de un ejercicio
-const solution(array) = [4,8,10,12];
+
+// En este desafío tienes un array de números, usando la función map debes retornar todos los números del array multiplicados por dos.
+
+// La solución debería tener un input y output como los siguientes:
+
+// Input
+
+// solution([2, 4, 5, 6]);
+
+// Output
+
+// [4,8,10,12]
+
+
+const solution (array) = [4,8,10,12];
 
 function solution(array) {
- return newSolution = array.map((item => item*2));
+    return newSolution = array.map((item => item*2));
 }; 
 console.logsolution([2, 4, 5, 6]);
