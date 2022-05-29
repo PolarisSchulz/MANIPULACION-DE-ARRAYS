@@ -32,3 +32,8 @@ let text = "How are you doing today?";
 const myArray = text.split(" ");
 console.log('myArray', myArray);
 // regresa 'myArray' [ 'How', 'are', 'you', 'doing', 'today?' ]
+
+const text2 = 'How are you doing today?';
+const respuesta16 = text2.split(' ').join('-').toLowerCase();
+console.log('con join', respuesta16);
+// regresa: 'con join' 'how-are-you-doing-today?'
