@@ -16,7 +16,6 @@ console.log(elements.join('-'));
 
 // Y el método split() divide un objeto de tipo String en un array de cadenas mediante la separación de la cadena en sub-cadenas. 
 
-
 let text = "How are you doing today?";
 const myArray = text.split(" ");
 console.log('myArray', myArray);

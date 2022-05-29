@@ -123,5 +123,4 @@ const datesOverlap = (start1, end1, start2, end2) => {
 //verificamos
 
 datesOverlap(obj1.startDate, obj1.endDate, obj2.startDate, obj2.endDate);
-
 // retorna true
