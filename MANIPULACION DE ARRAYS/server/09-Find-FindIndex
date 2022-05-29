@@ -1,0 +1,94 @@
+//Find, es muy similar al metodo filter pero...
+// Find solo va a retornar un objeto que cumpla con la condicional
+// Find solo va a devolver el elemento, NO COMO UN ARRAY, que cumple la condicional.
+
+const numbers8 = [1,30,49,29,10,13];
+
+let respuesta8 =undefined;
+for (let index = 0; index < numbers8.length; index++) {
+    const element = numbers8[index];
+    if (element === 30) {
+        respuesta8 = element;
+        break;
+    }
+}
+console.log('con for', respuesta8);
+// regresa 'con for' 30
+
+
+
+
+const numbers10 = [1,30,49,29,10,13];
+
+let respuesta10 =undefined;
+for (let index = 0; index < numbers10.length; index++) {
+    const element = numbers10[index];
+    if (element === 45613) {
+        respuesta10 = element;
+        break;
+    }
+}
+console.log('con for', respuesta10);
+// regresa undefined, porque no hay un numero como 45613 en el array
+
+
+
+// ------------------------------
+
+const numbers9 = [1,30,49,29,10,13];
+const respuesta9 = numbers9.find(item => item === 30)
+console.log('con find', respuesta9);
+// regresa 'con find' 30
+
+
+
+
+const numbers11 = [1,30,49,29,10,13];
+const respuesta11 = numbers11.find(item => item === 7896546)
+console.log('con find', respuesta11);
+// regresa undefined, porque no hay un numero como 7896546 en el array
+
+
+
+
+// ----------------------
+
+
+const products = [
+    {
+    name: "Pizza",
+    price: 12,
+    id: '🍕'
+    },
+    {
+    name: "Burger",
+    price: 23,
+    id: '🍔'
+    },
+    {
+    name: "Hot dog",
+    price: 34,
+    id: '🌭'
+    },
+    {
+    name: "Hot cakes",
+    price: 355,
+    id: '🥞'
+    },
+];
+
+const respuesta12 = products.find(item => item.id === '🍔')
+console.log('hamburguesa', respuesta12);
+// respuesta 'hamburguesa' { name: 'Burger', price: 23, id: '🍔' }
+
+
+
+// ---------------------
+
+// Hay una variable de este elemento findIndex, donde no devolvemos el elemento, sino EN QUE POSICION SE ENCUENTRA
+// De no encontrar ninguno devuelve -1 como respuesta del return del método. 
+
+
+const respuesta13 = products.findIndex(item => item.id === '🍔')
+console.log('hamburguesa', respuesta13);
+// respuesta 'hamburguesa' 1
