@@ -1,16 +1,28 @@
-// El método join() une todos los elementos de un array en una cadena y devuelve esta cadena. Podemos pasarle cualquier elemento como separador que deseemos.
+// El método join() une todos los elementos de un array en una cadena y devuelve esta cadena.
+// Podemos pasarle cualquier elemento como separador que deseemos.
 
 const elements = ['Fire', 'Air', 'Water'];
 
-console.log( elements.join() );
-// expected output "Fire,Air,Water"
+let respuestaFinal = '';
+const separator = '--';
+for (let index = 0; index < elements.length; index++) {
+    const element = elements[index];
+    respuestaFinal =respuestaFinal + element + separator;
+}
+console.log('con for', respuestaFinal);
+// refresa: 'con for' 'Fire--Air--Water--'
 
-console.log(elements.join(''));
-// expected output "FireAirWater"
 
-console.log(elements.join('-'));
-// expected output "Fire-Air-Water"
 
+
+const elements2 = ['Fire', 'Air', 'Water'];
+const respuesta15 = elements2.join('--')
+console.log('con join', respuesta15);
+// regresa: 'con join' 'Fire--Air--Water'
+
+
+
+// ---------------------
 
 
 
