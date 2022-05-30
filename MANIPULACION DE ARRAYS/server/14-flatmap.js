@@ -101,7 +101,8 @@ console.log('calendars', respuesta26);
 
 
 
-// Tenemos el array de fechas directas de inicio de cada uno de los calendarios
+
+// flatmap no se introduce por nivbeles como flat
 const respuesta27 = Object.values(calendars).flatMap(item =>{
     console.log('item, item')
     return item.map(date => date.startDate);
@@ -118,3 +119,4 @@ console.log('calendars', respuesta27);
 2021-02-01T15:00:00.000Z
 ]*/
 
+// Tenemos el array de fechas directas de inicio de cada uno de los calendarios
