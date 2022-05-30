@@ -1,4 +1,5 @@
 // Me dice si un elemento está o no está dentro del array (sistema de busqueda)
+// El método includes() determina si una array incluye un determinado elemento, devuelve true o false según corresponda. 
 
 
 
