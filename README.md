@@ -12,3 +12,6 @@
     - Find
     - Includes y fromIndex
     - Join (metodo de array) y Split(metodo de string)
+    - Concat  y .push
+    - Flat
+    - Flatmap
